@@ -52,28 +52,28 @@ class _MyHomePageState extends State<MyHomePage> {
               Wrap(
                 spacing: 10,
                 children: [
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _controller.insertText("Text");
                     },
                     child: const Text("Add Text"),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _controller.insertText("😁");
                     },
                     child: const Text("Add 😁"),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _controller.insertText("👍");
                     },
                     child: const Text("Add 👍"),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       final block = RichBlock(
-                        text: "@abc‎​‎ ",
+                        text: "@abc😎🤯",
                         data: "@123456",
                         style: const TextStyle(
                           color: Colors.blue,
@@ -82,13 +82,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       );
                       _controller.insertBlock(block);
                     },
-                    child: const Text("Add @    "),
+                    child: const Text("Add @😎🤯"),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       final block = RichBlock(
-                        text: "#subject ",
-                        data: "#888999 ",
+                        text: "#subject",
+                        data: "#888999",
                         style: const TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
@@ -98,13 +98,13 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                     child: const Text("Add #"),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _controller.clear();
                     },
                     child: const Text("clear"),
                   ),
-                  RaisedButton(
+                  ElevatedButton(
                     onPressed: () {
                       _focusNode.unfocus();
                     },
