@@ -19,6 +19,7 @@ class RichInput extends TextField {
     super.textDirection,
     super.readOnly = false,
     super.toolbarOptions,
+    super.contextMenuBuilder,
     super.showCursor,
     super.autofocus = false,
     super.obscureText = false,
